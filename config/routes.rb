@@ -1,5 +1,7 @@
 MixtagramTemp::Application.routes.draw do
-  root 'static_pages#index'
+  root 'static_pages#home'
+
+  match 'static_pages/notification_email', to: 'static_pages#notification_email', via: [:post]
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".

@@ -14,7 +14,22 @@ MixtagramTemp::Application.configure do
   config.action_controller.perform_caching = false
 
   # Don't care if the mailer can't send.
-  config.action_mailer.raise_delivery_errors = false
+  config.action_mailer.raise_delivery_errors = true
+
+  config.action_mailer.delivery_method = :smtp
+  config.action_mailer.smtp_settings = {
+      address:              Figaro.env.SMTP_ADDRESS,
+      port:                 Figaro.env.SMTP_PORT,
+      domain:               Figaro.env.SMTP_DOMAIN,
+      user_name:            Figaro.env.SMTP_USER,
+      password:             Figaro.env.SMTP_PASS,
+      authentication:       'plain',
+      enable_starttls_auto: true  }
+
+  config.action_mailer.default_url_options = {
+      :host => 'dev.mixtagr.am',
+      :port => 3000
+  }
 
   # Print deprecation notices to the Rails logger.
   config.active_support.deprecation = :log
