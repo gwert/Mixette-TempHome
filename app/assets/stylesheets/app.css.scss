@@ -7,3 +7,40 @@
     font-family: 'Raleway-SemiBold';
     src: font-url('Raleway-SemiBold.otf');
 }
+
+form#notification {
+  #email{
+    font-family: 'Raleway';
+    font-size: 15pt;
+    width: 450px;
+    height: 35px;
+    border-width: 2px;
+    border-style: solid;
+    border-color: #dedede;
+    outline: none;
+    z-index: 1;
+  }
+
+  input[type=submit] {
+    width: 60px;
+    height: 30px;
+    font-family: 'Raleway-Semibold';
+    font-size: 10pt;
+    color: #fff;
+    background-color: #00a59b;
+    border: 0;
+    outline: none;
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    z-index: 2;
+  }
+}
+
+#message {
+  position: relative;
+  top: 100px;
+  font-family: 'Raleway';
+  font-size: 13pt;
+  color: #5d5d5d;
+}

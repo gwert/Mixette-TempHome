@@ -3,21 +3,20 @@
     <%= image_tag 'MG_splash_bg.png', style: "width: 100%; height: auto; position: relative; bottom: -4px;" %>
   </div>
 
-  <div style="text-align: center; position: relative; top: 35%;">
-    <div style="font-family: Raleway-SemiBold; font-size: 20pt; color: #00a59b; position: relative; top: -60px;">
+  <div style="text-align: center; position: relative; top: 25%;">
+    <div style="font-family: Raleway-SemiBold; font-size: 20pt; color: #00a59b; position: relative; top: -50px;">
       COMING SOON
     </div>
     <%= image_tag 'MG_splash_logo.png', style: "width: 45%; height: auto;" %>
     <div style="font-family: Raleway-Light; font-size: 31pt; color: #5d5d5d; position: relative; top: 30px;">
       The Message is in the Mix.
     </div>
-    <div style="position: relative; top: 30px;">
-      <%= form_tag({controller: "static_pages", action: "notification_email"}, remote: true) do %>
-        <%= label_tag(:q, "Search for:") %>
-        <%= text_field_tag(:q) %>
-        <%= submit_tag("Search") %>
+    <div style="position: relative; top: 80px; display: inline-block;">
+      <%= form_tag({controller: "static_pages", action: "notification_email"}, remote: true, id: "notification") do %>
+        <%= text_field_tag(:email, nil, placeholder: "Enter your email address to get notified.") %>
+        <%= submit_tag("SEND") %>
       <% end %>
     </div>
-    <div id="thanks"></div>
+    <div id="message"></div>
   </div>
 </div>
