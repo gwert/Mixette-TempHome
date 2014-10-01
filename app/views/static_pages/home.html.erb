@@ -11,12 +11,12 @@
     <div style="font-family: Raleway-Light; font-size: 31pt; color: #5d5d5d; position: relative; top: 30px;">
       The Message is in the Mix.
     </div>
-    <div style="position: relative; top: 80px; display: inline-block;">
+    <div id="message">&nbsp;</div>
+    <div style="position: relative; top: 60px; display: inline-block;">
       <%= form_tag({controller: "static_pages", action: "notification_email"}, remote: true, id: "notification") do %>
         <%= text_field_tag(:email, nil, placeholder: "Enter your email address to get notified.") %>
-        <%= submit_tag("SEND") %>
+        <%= submit_tag("SEND", 'data-disable-with' => "WAIT...") %>
       <% end %>
     </div>
-    <div id="message"></div>
   </div>
 </div>
