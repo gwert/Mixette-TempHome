@@ -1,4 +1,4 @@
-MixtagramTemp::Application.configure do
+MixetteTemp::Application.configure do
   # Settings specified here will take precedence over those in config/application.rb.
 
   # Code is not reloaded between requests.
@@ -76,7 +76,7 @@ MixtagramTemp::Application.configure do
       enable_starttls_auto: true  }
 
   config.action_mailer.default_url_options = {
-      :host => 'www.mixtagr.am',
+      :host => 'www.mixetteapp.com',
   }
 
   # Enable locale fallbacks for I18n (makes lookups for any locale fall back to

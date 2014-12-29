@@ -1,7 +1,16 @@
-MixtagramTemp::Application.routes.draw do
+MixetteTemp::Application.routes.draw do
+  #Redirect to mixetteapp.com if other domains entered
+  constraints(:host => /mixtagr.am|mixtagram.com/) do
+    match '/(*path)' => redirect { |params, req|
+     query_params = req.params.except(:path)
+     "http://mixetteapp.com/#{params[:path]}#{query_params.keys.any? ? "?" + query_params.to_query : ""}"
+      }, via: [:get, :post]
+  end
+
   root 'static_pages#home'
 
   match 'static_pages/notification_email', to: 'static_pages#notification_email', via: [:post]
+
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".

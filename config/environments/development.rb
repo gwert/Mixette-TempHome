@@ -1,4 +1,4 @@
-MixtagramTemp::Application.configure do
+MixetteTemp::Application.configure do
   # Settings specified here will take precedence over those in config/application.rb.
 
   # In the development environment your application's code is reloaded on
@@ -27,7 +27,7 @@ MixtagramTemp::Application.configure do
       enable_starttls_auto: true  }
 
   config.action_mailer.default_url_options = {
-      :host => 'dev.mixtagr.am',
+      :host => 'dev.mixetteapp.com',
       :port => 3000
   }
 

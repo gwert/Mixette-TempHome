@@ -9,4 +9,4 @@
 
 # Make sure your secret_key_base is kept private
 # if you're sharing your code publicly.
-MixtagramTemp::Application.config.secret_key_base = 'c161b3a0d46910da3f85456ded2b2b86e7591b3d98daa49d39af3d0f30da285eea96e5c86628dcd07576b0c66e8326b870bed904c27164e308092a0243aba2a3'
+MixetteTemp::Application.config.secret_key_base = 'c161b3a0d46910da3f85456ded2b2b86e7591b3d98daa49d39af3d0f30da285eea96e5c86628dcd07576b0c66e8326b870bed904c27164e308092a0243aba2a3'

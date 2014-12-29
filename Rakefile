@@ -3,4 +3,4 @@
 
 require File.expand_path('../config/application', __FILE__)
 
-MixtagramTemp::Application.load_tasks
+MixetteTemp::Application.load_tasks
