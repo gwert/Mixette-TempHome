@@ -1,7 +1,7 @@
 SMTP_ADDRESS: email-smtp.us-east-1.amazonaws.com
 SMTP_PORT: 587
 SMTP_DOMAIN: mixetteapp.com
-SMTP_USER: ***REMOVED***
-SMTP_PASS: ***REMOVED***
+SMTP_USER: <insert AWS access key for SMTP user>
+SMTP_PASS: <insert AWS secrect key for SMTP user>
 
 NOTIFICATION_EMAILS: kelly@mixetteapp.com
