@@ -1,5 +1,5 @@
 class NotificationMailer < ActionMailer::Base
-  default from: "Mixette <hello@mixtagr.am>"
+  default from: "Mixette <hello@mixetteapp.com>"
 
   def notification_request_email(email)
     @email = email
